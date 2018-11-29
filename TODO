@@ -1,0 +1,15 @@
+TODO
+
+- Roster and info at the bottom of each WoW-Progress Guild Page is loaded via Javascript after the page loads
+  so requests.get(url).context does not capture the data. We can either get this from other sources,
+  or use something like dryscrape (python lib) to create a webkit session and scrape the javascript portions
+
+- Retrieve all characters on self.server who are not in a guild and retrieve the same data for them as we do for
+  characters in guilds (from above point)
+
+- Use WCL API to grab recent ilvl parses for all characters we are interested in
+
+- (Afterthought) Cronjob for going through WoWprogress LFG and alert when new person is LFG, filtering for our raid times
+
+- Use a library, such as xlsxwriter, to create a Excel sheet(s) with all our data. 
+  Make it easy to navigate, color code players based on class, link characters to guilds, etc
